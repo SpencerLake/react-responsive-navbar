@@ -1,12 +1,24 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
 li {
   text-decoration: none;
   list-style: none;
+  list-style-type: none;
 }
 
 
 
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
   background-color:rgb(250, 250, 218);
   height: 100vh;
   width: 1000px;
@@ -16,11 +28,13 @@ li {
   width: 100%;
   background-color: black;
   padding: 20px 10px 20px 10px;
+  max-height: 70px;
 }
 
 .nav-cont {
   background-color: grey;
   display: flex;
+  justify-content: space-between;
 }
 
 .left {
@@ -33,5 +47,43 @@ li {
 }
 
 .right {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-cont {
+  display: flex;
+  padding-right: 40px;
+}
+
+.nav-option {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1108px) {
+
+  .App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(250, 250, 218);
+    height: 100vh;
+    width: 800px;
+  }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(250, 250, 218);
+    height: 100vh;
+    max-width: 600px;
+  }
+
 
 }

@@ -8,16 +8,16 @@ function App() {
         <div className='nav-cont'>
           <div className='left'>
             <ul className='left-cont'>
-              <li>Tops</li>
-              <li>Bottoms</li>
-              <li>Misc</li>
+              <li className='nav-option'>Tops</li>
+              <li className='nav-option'>Bottoms</li>
+              <li className='nav-option'>Misc</li>
             </ul>
           </div>
           <div className='right'>
-            <ul>
+            <ul className='right-cont'>
               <li>Profile</li>
             </ul>
-          </div>
+          </div> 
         </div>
       </div>
       
